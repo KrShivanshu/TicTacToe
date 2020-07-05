@@ -1,0 +1,7 @@
+Debug/
+tictactoe/Debug
+tictactoe/lib
+tictactoe/include
+tictactoe/.vcxproj
+tictactoe/.vcxproj.filters
+tictactoe/.vcxproj.user
