@@ -1,8 +1,7 @@
 #include "AssetMan.h"
 
-inline Engine::AssetMan::AssetMan() {}
-
-inline Engine::AssetMan::~AssetMan() {}
+Engine::AssetMan::AssetMan() {}
+Engine::AssetMan::~AssetMan() {}
 
 void Engine::AssetMan::AddTextures(const string id, const string filepath)
 {
@@ -26,11 +25,11 @@ void Engine::AssetMan::AddFont(const string id, const string filepath)
 Texture & Engine::AssetMan::GetTexture(string id)
 {
 	// TODO: insert return statement here
-	return *(_textureMap.at[id].get());
+	return *(_textureMap.at(id));
 }
 
 Font & Engine::AssetMan::GetFont(string id)
 {
 	// TODO: insert return statement here
-	return *(_fontMap.at[id].get());
+	return *(_fontMap.at(id).get());
 }

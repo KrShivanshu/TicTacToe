@@ -20,11 +20,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssetMan.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputMan.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="SplashScreen.cpp" />
     <ClCompile Include="StateMan.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetMan.h" />
+    <ClInclude Include="definItions.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="InputMan.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="SplashScreen.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMan.h" />
   </ItemGroup>

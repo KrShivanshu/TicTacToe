@@ -4,4 +4,5 @@ tictactoe/lib
 tictactoe/include
 tictactoe/.vcxproj
 tictactoe/.vcxproj.filters
-tictactoe/.vcxproj.user
+tictactoe/.vcxproj.user.vd
+.vs/

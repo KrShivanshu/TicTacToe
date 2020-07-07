@@ -1,2 +1,47 @@
-﻿  tictactoe.cpp
+﻿  Game.cpp
+  InputMan.cpp
+c:\projects\tictactoe\tictactoe\inputman.cpp(7): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+c:\projects\tictactoe\tictactoe\inputman.cpp(7): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  MainMenu.cpp
+c:\projects\tictactoe\tictactoe\mainmenu.cpp(21): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\projects\tictactoe\tictactoe\mainmenu.cpp(24): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\projects\tictactoe\tictactoe\mainmenu.cpp(25): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\projects\tictactoe\tictactoe\mainmenu.cpp(30): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\projects\tictactoe\tictactoe\mainmenu.cpp(35): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  SplashScreen.cpp
+c:\projects\tictactoe\tictactoe\splashscreen.cpp(21): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  main.cpp
+  Generating Code...
   tictactoe.vcxproj -> C:\projects\tictactoe\Debug\tictactoe.exe

@@ -8,8 +8,8 @@ namespace Engine {
 	class StateMan
 	{
 	public:
-		StateMan();;
-		~StateMan();;
+		StateMan();
+		~StateMan();
 
 		void AddState(unique_ptr<State>stateToAdd, bool replace=false);
 		void ProcessStateChange();

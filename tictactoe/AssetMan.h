@@ -15,7 +15,7 @@ namespace Engine {
 		map<string, unique_ptr<Font> > _fontMap;
 	public:
 		AssetMan();
-		~AssetMan();;
+		~AssetMan();
 
 		void AddTextures(const string id, const string filepath);
 		void AddFont(const string id, const string filepath);

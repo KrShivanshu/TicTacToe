@@ -1,11 +1,10 @@
 #include "StateMan.h"
 
 
-inline Engine::StateMan::StateMan() : _add(false),_remove(false),_replace(false)
+Engine::StateMan::StateMan() : _add(false),_remove(false),_replace(false)
 {
 }
-
-inline Engine::StateMan::~StateMan()
+Engine::StateMan::~StateMan()
 {
 }
 
