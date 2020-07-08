@@ -2,6 +2,7 @@
 #include "definItions.h"
 #include <iostream>
 #include <sstream>
+#include "GamePlay.h"
 using namespace sf;
 MainMenu::MainMenu(shared_ptr<Content>&content):_content(content)
 {
@@ -50,7 +51,12 @@ void MainMenu::ProcessInput()
 		}
 		else if (_content->_inputs->IsSpriteClicked(_playButton, Mouse::Left, *(_content->_window)))
 		{
-
+			_content->_states->AddState(make_unique<GamePlay>(_content), true);
+			//_content->_window->close();
+		}
+		else if (_content->_inputs->IsSpriteClicked(_exitButton, Mouse::Left, *(_content->_window)))
+		{
+			_content->_window->close();
 		}
 	}
 }

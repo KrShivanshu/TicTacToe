@@ -25,7 +25,7 @@ void Engine::AssetMan::AddFont(const string id, const string filepath)
 Texture & Engine::AssetMan::GetTexture(string id)
 {
 	// TODO: insert return statement here
-	return *(_textureMap.at(id));
+	return *(_textureMap.at(id).get());
 }
 
 Font & Engine::AssetMan::GetFont(string id)
