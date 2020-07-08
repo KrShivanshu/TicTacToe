@@ -2,6 +2,7 @@
 #include "definItions.h"
 #include <sstream>
 #include <iostream>
+#include "GamePause.h"
 GamePlay::GamePlay(shared_ptr<Content>&content):_content(content)
 {
 }
@@ -51,12 +52,14 @@ void GamePlay::ProcessInput()
 		}
 		else if (_content->_inputs->IsSpriteClicked(_pauseButton, Mouse::Left, *(_content->_window)))
 		{
-			//_content->_states->AddState(make_unique<GamePlay>(_content), true);
-			_content->_window->close();
+			_content->_states->AddState(make_unique<GamePause>(_content), true);
+			//_content->_window->close();
 		}
 		else if (_content->_inputs->IsSpriteClicked(_restartButton, Mouse::Left, *(_content->_window)))
 		{
-			_content->_window->close();
+			//_content->_window->close();
+			_content->_states->AddState(make_unique<GamePlay>(_content), true);
+
 		}
 	}
 }

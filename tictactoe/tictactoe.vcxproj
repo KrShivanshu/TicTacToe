@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="AssetMan.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GamePause.cpp" />
     <ClCompile Include="GamePlay.cpp" />
     <ClCompile Include="InputMan.cpp" />
     <ClCompile Include="main.cpp" />
@@ -32,6 +33,7 @@
     <ClInclude Include="AssetMan.h" />
     <ClInclude Include="definItions.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GamePause.h" />
     <ClInclude Include="GamePlay.h" />
     <ClInclude Include="InputMan.h" />
     <ClInclude Include="MainMenu.h" />

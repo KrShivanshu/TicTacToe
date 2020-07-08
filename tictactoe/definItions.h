@@ -23,3 +23,9 @@
 #define O_WIN_PATH "Assets/Textures/O Win.png"
 #define GRID_SPRITE_PATH "Assets/Textures/Grid.png"
 
+#define GAME_PAUSE_BG_PATH "Assets/Textures/Main Menu Background.png"
+#define RESUME_BUTTON_PATH "Assets/Textures/Resume Button.png"
+#define HOME_BUTTON_PATH "Assets/Textures/Home Button.png"
+
+
+
