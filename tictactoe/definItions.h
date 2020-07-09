@@ -8,7 +8,7 @@
 #define MAIN_MENU_BG_PATH "Assets/Textures/Main Menu Background.png"
 #define GAME_TITLE_PATH "Assets/Fonts/cooperblack.ttf"
 #define PLAY_BUTTON_PATH "Assets/Textures/Play Buttonn.png"
-#define EXIT_BUTTON_PATH "Assets/Textures/Exit Button.png"
+//#define EXIT_BUTTON_PATH "Assets/Textures/Exit Button.png"
 
 #define STATE_PLAYING 98
 #define STATE_PAUSED 97
@@ -23,9 +23,14 @@
 #define O_WIN_PATH "Assets/Textures/O Win.png"
 #define GRID_SPRITE_PATH "Assets/Textures/Grid.png"
 
-#define GAME_PAUSE_BG_PATH "Assets/Textures/Main Menu Background.png"
+#define GAME_PAUSE_BG_PATH "Assets/Textures/Pause Background.png"
 #define RESUME_BUTTON_PATH "Assets/Textures/Resume Button.png"
 #define HOME_BUTTON_PATH "Assets/Textures/Home Button.png"
+#define GAME_PASUE_TEXT_PATH "Assets/Fonts/cooperblack.ttf"
 
+#define GAME_OVER_BG_PATH "Assets/Textures/Main Menu Background.png"
+#define RETRY_BUTTON_PATH "Assets/Textures/Retry Button.png"
+#define EXIT_BUTTON_PATH "Assets/Textures/Exit Button.png"
+#define GAME_OVER_TEXT_PATH "Assets/Fonts/cooperblack.ttf"
 
 

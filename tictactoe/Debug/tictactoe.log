@@ -1,20 +1,13 @@
-﻿  Game.cpp
-  GamePause.cpp
-  GamePlay.cpp
+﻿  GamePause.cpp
+c:\projects\tictactoe\tictactoe\gamepause.cpp(22): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\projects\tictactoe\tictactoe\gamepause.cpp(24): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
   MainMenu.cpp
 c:\projects\tictactoe\tictactoe\mainmenu.cpp(22): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
 c:\projects\tictactoe\tictactoe\mainmenu.cpp(25): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-c:\projects\tictactoe\tictactoe\mainmenu.cpp(26): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-c:\projects\tictactoe\tictactoe\mainmenu.cpp(31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-c:\projects\tictactoe\tictactoe\mainmenu.cpp(36): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
@@ -26,5 +19,4 @@ c:\projects\tictactoe\tictactoe\splashscreen.cpp(21): warning C4244: 'argument':
               T=unsigned int
           ]
   Generating Code...
-MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
   tictactoe.vcxproj -> C:\projects\tictactoe\Debug\tictactoe.exe

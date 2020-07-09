@@ -18,6 +18,7 @@ public:
 
 private:
 	shared_ptr<Content>_content;
+	Text _gamePause;
 	Sprite _background;
 	Sprite _resumeButton;
 	Sprite _homeButton;

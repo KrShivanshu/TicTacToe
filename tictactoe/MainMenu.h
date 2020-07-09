@@ -19,6 +19,6 @@ private:
 	Text _gameTitle;
 	Sprite _backGround;
 	Sprite _playButton;
-	Sprite _exitButton;
+	//Sprite _exitButton;
 };
 

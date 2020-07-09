@@ -23,18 +23,18 @@ void MainMenu::Init()
 	_gameTitle.setString("TIC-TAC-TOE");
 	_gameTitle.setOrigin(_gameTitle.getGlobalBounds().width / 2, _gameTitle.getGlobalBounds().height / 2);
 	_gameTitle.setPosition(_content->_window->getSize().x / 2, _content->_window->getSize().y / 10*1 );
-	_gameTitle.setCharacterSize(40.f);
+	//_gameTitle.setCharacterSize(40.f);
 
 	_content->_assets->AddTextures("PLAY_BUTTON",PLAY_BUTTON_PATH);
 	_playButton.setTexture(_content->_assets->GetTexture("PLAY_BUTTON"));
-	_playButton.setOrigin(_playButton.getGlobalBounds().width / 2, _playButton.getGlobalBounds().height / 2);
-	_playButton.setPosition(_content->_window->getSize().x / 2, _content->_window->getSize().y / 10*4);
+	//_playButton.setOrigin(_playButton.getGlobalBounds().width / 2, _playButton.getGlobalBounds().height / 2);
+	_playButton.setPosition(_content->_window->getSize().x / 2 - _playButton.getGlobalBounds().width / 2, _content->_window->getSize().y / 10*4 - _playButton.getGlobalBounds().height / 2);
 
-	_content->_assets->AddTextures("EXIT_BUTTON", EXIT_BUTTON_PATH);
-	_exitButton.setTexture(_content->_assets->GetTexture("EXIT_BUTTON"));
-	_exitButton.setOrigin(_exitButton.getGlobalBounds().width / 2, _exitButton.getGlobalBounds().height / 2);
-	_exitButton.setPosition(_content->_window->getSize().x / 2, _content->_window->getSize().y / 10 * 6);
-	_exitButton.setColor(Color::Black);
+	//_content->_assets->AddTextures("EXIT_BUTTON", EXIT_BUTTON_PATH);
+	//_exitButton.setTexture(_content->_assets->GetTexture("EXIT_BUTTON"));
+	//_exitButton.setScale(.65f, .65f);
+	//_exitButton.setOrigin(,);
+	//.setPosition(_content->_window->getSize().x / 2-(_exitButton.getGlobalBounds().width / 2), _content->_window->getSize().y / 10 * 6-(_exitButton.getGlobalBounds().height / 2));
 
 
 
@@ -54,10 +54,10 @@ void MainMenu::ProcessInput()
 			_content->_states->AddState(make_unique<GamePlay>(_content), true);
 			//_content->_window->close();
 		}
-		else if (_content->_inputs->IsSpriteClicked(_exitButton, Mouse::Left, *(_content->_window)))
-		{
-			_content->_window->close();
-		}
+		//else if (_content->_inputs->IsSpriteClicked(_exitButton, Mouse::Left, *(_content->_window)))
+		//{
+		//	_content->_window->close();
+		//}
 	}
 }
 
@@ -71,6 +71,6 @@ void MainMenu::Draw()
 	_content->_window->draw(_backGround);
 	_content->_window->draw(_gameTitle);
 	_content->_window->draw(_playButton);
-	_content->_window->draw(_exitButton);
+	//_content->_window->draw(_exitButton);
 	_content->_window->display();
 }

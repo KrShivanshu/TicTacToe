@@ -3,6 +3,7 @@
 #include <sstream>
 #include <iostream>
 #include "GamePause.h"
+#include "GameOver.h"
 GamePlay::GamePlay(shared_ptr<Content>&content):_content(content)
 {
 }
@@ -18,12 +19,14 @@ void GamePlay::Init()
 
 	_content->_assets->AddTextures("PAUSE_BUTTON", PAUSE_BUTTON_PATH);
 	_pauseButton.setTexture(_content->_assets->GetTexture("PAUSE_BUTTON"));
+	_pauseButton.setScale(0.5f, 0.5f);
 	_pauseButton.setPosition(_content->_window->getSize().x - (_pauseButton.getGlobalBounds().width), 0);
-
+	
 
 	_content->_assets->AddTextures("RESTART_BUTTON", RESTART_BUTTON_PATH);
 	_restartButton.setTexture(_content->_assets->GetTexture("RESTART_BUTTON"));
-	_restartButton.setPosition(0, 0);
+	_restartButton.setScale(0.38f, 0.38f);
+	_restartButton.setPosition(7.f, 7.f);
 
 	_content->_assets->AddTextures("GRID_SPRITE", GRID_SPRITE_PATH);
 	_gridSprite.setTexture(_content->_assets->GetTexture("GRID_SPRITE"));
@@ -52,7 +55,9 @@ void GamePlay::ProcessInput()
 		}
 		else if (_content->_inputs->IsSpriteClicked(_pauseButton, Mouse::Left, *(_content->_window)))
 		{
-			_content->_states->AddState(make_unique<GamePause>(_content), true);
+			_content->_states->AddState(make_unique<GameOver>(_content), true);
+
+			//_content->_states->AddState(make_unique<GamePause>(_content), false);
 			//_content->_window->close();
 		}
 		else if (_content->_inputs->IsSpriteClicked(_restartButton, Mouse::Left, *(_content->_window)))
