@@ -48,7 +48,8 @@ void GamePause::ProcessInput()
 		}
 		else if (_content->_inputs->IsSpriteClicked(_resumeButton, Mouse::Left, *(_content->_window)))
 		{
-			_content->_states->AddState(make_unique<GamePlay>(_content), true);
+			_content->_states->PopCurrentState();
+			//_content->_states->AddState(make_unique<GamePlay>(_content), true);
 			//_content->_window->close();
 		}
 		else if (_content->_inputs->IsSpriteClicked(_homeButton, Mouse::Left, *(_content->_window)))

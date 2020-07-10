@@ -1,22 +1,8 @@
-﻿  GamePause.cpp
-c:\projects\tictactoe\tictactoe\gamepause.cpp(22): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-c:\projects\tictactoe\tictactoe\gamepause.cpp(24): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-  MainMenu.cpp
+﻿  MainMenu.cpp
 c:\projects\tictactoe\tictactoe\mainmenu.cpp(22): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
 c:\projects\tictactoe\tictactoe\mainmenu.cpp(25): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-  SplashScreen.cpp
-c:\projects\tictactoe\tictactoe\splashscreen.cpp(21): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-  Generating Code...
   tictactoe.vcxproj -> C:\projects\tictactoe\Debug\tictactoe.exe

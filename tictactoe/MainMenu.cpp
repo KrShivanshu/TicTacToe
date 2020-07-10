@@ -19,7 +19,7 @@ void MainMenu::Init()
 
 	_content->_assets->AddFont("GAME_TITLE", GAME_TITLE_PATH);
 	_gameTitle.setFont(_content->_assets->GetFont("GAME_TITLE"));
-	_gameTitle.setCharacterSize(40.f);
+	_gameTitle.setCharacterSize(50.f);
 	_gameTitle.setString("TIC-TAC-TOE");
 	_gameTitle.setOrigin(_gameTitle.getGlobalBounds().width / 2, _gameTitle.getGlobalBounds().height / 2);
 	_gameTitle.setPosition(_content->_window->getSize().x / 2, _content->_window->getSize().y / 10*1 );
@@ -28,7 +28,7 @@ void MainMenu::Init()
 	_content->_assets->AddTextures("PLAY_BUTTON",PLAY_BUTTON_PATH);
 	_playButton.setTexture(_content->_assets->GetTexture("PLAY_BUTTON"));
 	//_playButton.setOrigin(_playButton.getGlobalBounds().width / 2, _playButton.getGlobalBounds().height / 2);
-	_playButton.setPosition(_content->_window->getSize().x / 2 - _playButton.getGlobalBounds().width / 2, _content->_window->getSize().y / 10*4 - _playButton.getGlobalBounds().height / 2);
+	_playButton.setPosition(_content->_window->getSize().x / 2 - _playButton.getGlobalBounds().width / 2, _content->_window->getSize().y / 10*6 - _playButton.getGlobalBounds().height / 2);
 
 	//_content->_assets->AddTextures("EXIT_BUTTON", EXIT_BUTTON_PATH);
 	//_exitButton.setTexture(_content->_assets->GetTexture("EXIT_BUTTON"));

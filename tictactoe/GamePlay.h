@@ -1,7 +1,7 @@
 #pragma once
 #include "State.h"
 #include "Game.h"
-//#include "AI.h"
+#include "AI.h"
 #include "SFML/Graphics.hpp"
 using namespace Engine;
 class GamePlay :
@@ -17,8 +17,8 @@ public:
 	void Draw() override;
 
 private:
-	void InitgridPieces();
-	void ChechAndPlacePiece();
+	void InitGridPieces();
+	void CheckAndPlacePiece();
 	void CheckHasPlayerWon(int turn);
 	void Chech3PiecesForMatch(int x1, int y1, int x2, int y2, int x3, int y3, int pieceToCheck);
 	shared_ptr<Content>_content;
@@ -30,7 +30,7 @@ private:
 	int _gridArray[3][3];
 	int turn;
 	int gameState;
-	//AI *ai;
+	AI *ai;
 	sf::Clock _clock;
 
 };
