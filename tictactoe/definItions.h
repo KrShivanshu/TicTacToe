@@ -1,9 +1,8 @@
 #pragma once
 #define SCREEN_WIDTH 480
-#define SCREEN_HEIGHT 640
-
+#define SCREEN_HEIGHT 720
 #define SPLASH_SCREEN_BG_PATH "Assets/Textures/Splash Background.png"
-#define SPALSH_SCREEN_TIME 1.f
+#define SPALSH_SCREEN_TIME 2.f
 
 #define MAIN_MENU_BG_PATH "Assets/Textures/Main Menu Background.png"
 #define GAME_TITLE_PATH "Assets/Fonts/cooperblack.ttf"
@@ -27,10 +26,10 @@
 #define GAMEPLAY_BG_PATH "Assets/Textures/Main Menu Background.png"
 #define PAUSE_BUTTON_PATH "Assets/Textures/Pause Button.png"
 #define RESTART_BUTTON_PATH "Assets/Textures/Retry Button.png"
-#define X_PIECE_PATH "Assets/Textures/X 110.png"
-#define O_PIECE_PATH "Assets/Textures/O 110.png"
-#define X_WIN_PATH "Assets/Textures/X Win 115.png"
-#define O_WIN_PATH "Assets/Textures/O Win 115.png"
+#define X_PIECE_PATH "Assets/Textures/X110.png"
+#define O_PIECE_PATH "Assets/Textures/O110.png"
+#define X_WIN_PATH "Assets/Textures/XWin115.png"
+#define O_WIN_PATH "Assets/Textures/OWin115.png"
 #define GRID_SPRITE_PATH "Assets/Textures/Grid 350.png"
 
 #define GAME_PAUSE_BG_PATH "Assets/Textures/Pause Background.png"

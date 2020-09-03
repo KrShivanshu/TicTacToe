@@ -1,4 +1,6 @@
-Debug/
+.dll
+.ilk
+.pdb
 tictactoe/Debug
 tictactoe/lib
 tictactoe/include
